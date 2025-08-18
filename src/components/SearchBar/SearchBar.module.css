@@ -1,0 +1,42 @@
+.header {
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  background-color: lightseagreen;
+
+  form {
+    position: relative;
+  }
+
+  button[type='submit'] {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    padding: 0;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-color: transparent;
+
+    &:hover svg {
+      stroke: black;
+    }
+
+    svg {
+      transition: stroke 150ms;
+    }
+  }
+
+  input {
+    border: 0;
+    height: 40px;
+    outline: none;
+    color: black;
+    min-width: 400px;
+    padding-left: 40px;
+    padding-right: 8px;
+    border-radius: 3px;
+    background-color: white;
+  }
+}

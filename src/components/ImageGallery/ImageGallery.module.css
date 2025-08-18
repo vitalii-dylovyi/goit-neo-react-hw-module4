@@ -1,0 +1,28 @@
+.gallery {
+  gap: 8px;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.gallery-item {
+  height: min-content;
+  flex: 1 1 calc(100% / 4 - 8px);
+
+  div {
+    display: flex;
+  }
+}
+
+.gallery-image {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 200ms;
+  height: calc((100vh - 58px - 60px + 16px) / 3 - 16px);
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
